@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta HTTP-EQUIV="EXPIRES" CONTENT="-1">
+		<script src="jquery-3.5.1.min.js"></script>
+		<script language="javascript" src="model.js" > </script>
+		<script language="javascript" src="controller.js" > </script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<style>
+			#ui_login { display:block; }
+			#ui_play { display:none; }
+		</style>
+		<title>f0rt9it32d</title>
+	</head>
+	<body bgcolor="ffffff">
+		<h1>f0rt9it32d</h1>
+		<center>
+		<div id="ui_login">
+			<h1 class="loginText">Login</h1>
+				<div class="loginBox">
+					<div class="loginInput">
+						Username: <input type="text" id="username" placeholder="User Name" />
+					</div>
+					<div class="loginInput">
+						Password: <input type="password" id="password" placeholder="Password" />
+					</div>
+					<div class="loginInput">
+						<input type="submit" id="loginSubmit" value="Login" class="mainScreenButtons">
+						<input type="submit" id="registerSubmit" value="Register" class="mainScreenButtons">
+					</div>
+				</div>
+			</div>
+		</center>
+		<div id="ui_navbar">
+			<center>
+				<nav>
+					<input type="submit" id="navPlay" value="Play" class="navButtons">
+					<input type="submit" id="navInstructions" value="Instructions" class="navButtons">
+					<input type="submit" id="navStats" value="Stats" class="navButtons">
+					<input type="submit" id="navProfile" value="Profile" class="navButtons">
+					<input type="submit" id="navLogout" value="Logout" class="navButtons">
+				</nav>
+			</center>
+		</div>
+		<div id="ui_play">
+			<center>
+				<canvas id="stage" width="800" height="800" style="border:1px solid black;"> </canvas>
+			</center>
+		</div>
+		<center>
+			<div id="ui_instructions" class="instructionContainer">
+				<h1>Instructions</h1>
+				<li class="infoText">Move with WASD</li>
+				<li class="infoText">Obstacles can be destroyed</li>
+				<li class="infoText">Use mouse to aim and LMB to shoot</li>
+				<li class="infoText">Cannot walk through obstacles</li>
+				<li class="infoText">Light-red circles are enemies, shoot them and accumulate kills!</li>
+				<li class="infoText">Once dead or if all 25 enemies are killed, simply double-click the canvas to restart the game</li>
+			</div>
+		</center>
+		<center>
+			<div id="ui_register">
+				<h1 class="registerText">Register</h1>
+				<div class="registerBox">
+					<div class="registerInput">
+						Username: <input type="text" id="registerUser" placeholder="User Name" />
+					</div>
+					<div class="registerInput">
+						Password: <input type="password" id="registerPass" placeholder="Password" />
+					</div>
+					<div class="registerInput">
+						Confirm: <input type="password" id="confirmPass" placeholder="Password" />
+					</div>
+					<div class="registerInput">
+						E-mail: <input type="text" id="registerEmail" placeholder="E-mail" />
+					</div>
+					<div class="registerInput">
+						Date of Birth: <input type="date" name="dateOfBirth" id="registerDOB"/>
+					</div>
+					<div class="registerInput">
+						Gender: <input list="genders" name="genders" id="registerGenders">
+						<datalist id="genders">
+							<option value="Male">
+							<option value="Female">
+							<option value="Other">
+						</datalist>
+					</div>
+					<div class="registerInput">
+						<input type="submit" id="confirmRegister" value="Register" class="mainScreenButtons">
+						<input type="submit" id="backToLogin" value="Back to Login" class="mainScreenButtons">
+					</div>
+				</div>
+			</div>
+		</center>
+		<center>
+			<div id="ui_stats">
+				<h1>Stats</h1>
+				<div class="statsContainer">
+					<li class="statsText">Total kills: <div id="statsKills"></div></li>
+					<li class="statsText">Total damage done: <div id="statsDamage"></div></li>
+					<li class="statsText">Total damage taken: <div id="statsTaken"></div></li>
+				</div>
+			</div>
+		</center>
+		<center>
+			<div id="ui_profile">
+				<h1>Profile</h1>
+				<div class="statsContainer">
+					<div class="profileInput">
+						Username: <input type="text" id="profileUser" placeholder="User Name" />
+					</div>
+					<div class="profileInput">
+						Password: <input type="password" id="profilePass" placeholder="Password" />
+					</div>
+					<div class="profileInput">
+						E-mail: <input type="text" id="profileEmail" placeholder="E-mail" />
+					</div>
+					<div class="profileInput">
+						Date of Birth: <input type="date" name="dateOfBirth" id="profileDOB" />
+					</div>
+					<div class="profileInput">
+						Gender: <input list="genders" name="genders" id="profileGenders">
+						<datalist id="genders">
+							<option value="Male">
+							<option value="Female">
+							<option value="Other">
+						</datalist>
+					</div>
+					<div class="profileInput">
+						<input type="submit" id="updateProfile" value="Update" class="navButtons">
+					</div>
+				</div>
+			</div>
+		</center>
+	</body>
+</html>

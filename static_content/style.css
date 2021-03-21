@@ -1,0 +1,88 @@
+.loginBox {
+  border: 1px solid gray;
+  display: grid;
+  padding: 1em;
+  place-content: center;
+  max-width: 500px;
+}
+
+.loginInput {
+  display: block;
+  margin: 1em;
+}
+
+.loginText {
+  display: grid;
+  place-content: center;
+}
+
+.registerBox {
+  border: 1px solid gray;
+  display: grid;
+  padding: 1em;
+  place-content: center;
+  max-width: 500px;
+}
+
+.registerInput {
+  display: block;
+  margin: 1em;
+}
+
+.registerText {
+  display: grid;
+  place-content: center;
+}
+
+.navButtons {
+  color: white;
+  padding: 8px 16px;
+  background-color: gray;
+  text-decoration: none;
+  border-radius: 12px;
+  margin: 1em;
+}
+
+.navButtons:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.infoText {
+  text-align: left;
+  margin: 0.5em;
+}
+
+.instructionContainer {
+  border: 1px solid gray;
+  max-width: 500px;
+}
+
+.statsContainer {
+  border: 1px solid gray;
+  max-width: 500px;
+}
+
+.statsText {
+  text-align: left;
+  margin: 0.5em;
+}
+
+.profileInput {
+  display: block;
+  margin: 1em;
+}
+
+.mainScreenButtons {
+  color: white;
+  padding: 8px 16px;
+  background-color: gray;
+  text-decoration: none;
+  border-radius: 12px;
+  margin: 1em;
+}
+
+.mainScreenButtons:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
